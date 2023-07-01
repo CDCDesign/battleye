@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "github:Mystou/battleye",
+      "/Users/lukemeaden/hh-discord-bot"
+    ]
+  ],
+  "_development": true,
+  "_from": "github:Mystou/battleye",
+  "_id": "battleye@github:Mystou/battleye#94c0a17c79ebc42d40ca8aac72c55c63907a1511",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/battleye",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:Mystou/battleye",
+    "rawSpec": "github:Mystou/battleye",
+    "saveSpec": "github:Mystou/battleye",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "github:Mystou/battleye#94c0a17c79ebc42d40ca8aac72c55c63907a1511",
+  "_spec": "github:Mystou/battleye",
+  "_where": "/battleye-master",
+  "author": {
+    "name": "Nurdism",
+    "email": "nurdism.io@gmail.com",
+    "url": "https://github.com/nurdism"
+  },
+  "bugs": {
+    "url": "https://github.com/Mystou/battleye/issues"
+  },
+  "dependencies": {},
+  "description": "Battleye rcon client built in typescript for node.",
+  "devDependencies": {
+    "@types/node": "12.12.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.1-alpha.6",
+    "@typescript-eslint/parser": "^2.8.1-alpha.6",
+    "eslint": "^6.5.1",
+    "eslint-config-bamboo": "^3.0.0",
+    "rimraf": "^3.0.0",
+    "typescript": "3.7.2"
+  },
+  "homepage": "https://github.com/Mystou/battleye",
+  "keywords": [
+    "battleye",
+    "rcon",
+    "arma",
+    "dayz",
+    "ark"
+  ],
+  "license": "MIT",
+  "main": "./dist/lib/index.js",
+  "name": "battleye",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mystou/battleye.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf coverage build tmp",
+    "lint": "tslint -t stylish --project tsconfig.json",
+    "precommit": "npm run lint",
+    "release": "npm run clean && npm run lint && npm run build && git push --follow-tags && npm publish"
+  },
+  "types": "./dist/lib/index.d.ts",
+  "version": "2.0.1"
+}
